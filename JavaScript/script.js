@@ -98,4 +98,4 @@ setInterval(() => {
 
     animation.src = images[currentFrame].src;
 
-}, 150);
+}, 70);
