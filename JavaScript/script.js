@@ -7,30 +7,28 @@ let followerX = 0;
 let followerY = 0;
 
 
-// Mausposition verfolgen
+// Mausposition
 document.addEventListener("mousemove", (event) => {
     mouseX = event.clientX;
     mouseY = event.clientY;
 });
 
 
-// Hover über Links
-const links = document.querySelectorAll("a");
+// Hover-Effekt für Projektkacheln
+const cards = document.querySelectorAll(".project-card");
 
-links.forEach((link) => {
+cards.forEach((card) => {
 
-    link.addEventListener("mouseenter", () => {
+    card.addEventListener("mouseenter", () => {
         follower.style.width = "45px";
         follower.style.height = "45px";
-
         follower.style.backgroundColor = "transparent";
         follower.style.border = "2px solid var(--color-primary)";
     });
 
-    link.addEventListener("mouseleave", () => {
+    card.addEventListener("mouseleave", () => {
         follower.style.width = "18px";
         follower.style.height = "18px";
-
         follower.style.backgroundColor = "var(--color-primary)";
         follower.style.border = "none";
     });
@@ -38,7 +36,7 @@ links.forEach((link) => {
 });
 
 
-// Cursor-Follower bewegen
+// Cursor-Follower
 function animate() {
 
     followerX += (mouseX - followerX) * 0.1;
