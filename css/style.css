@@ -353,8 +353,8 @@ h1 {
 
 .frame-animation img {
     display: block;
-    width: 150px !important;
-    height: auto !important;
+    width: 250px;
+    height: auto;
     right: -2rem;
 }
 
