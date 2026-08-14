@@ -137,3 +137,60 @@ h1 {
 .site-footer a:hover {
     color: var(--color-primary);
 }
+
+
+
+
+
+/* ================================
+   PROJECTS
+   ================================ */
+
+.projects {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.projects h2 {
+    margin-bottom: 2rem;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.project-card {
+    min-height: 320px;
+
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: var(--color-secondary);
+
+    color: var(--color-text);
+    text-decoration: none;
+
+    border-radius: var(--radius);
+
+    transition: transform 0.2s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-category {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.project-card h3 {
+    margin: 0;
+    font-size: 2rem;
+}
