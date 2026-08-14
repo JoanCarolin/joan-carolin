@@ -340,9 +340,12 @@ h1 {
 /* ========================================
 ANIMATIONS
    ======================================== */
+
 .frame-animation {
     width: 300px;
-    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .frame-animation img {
