@@ -194,3 +194,23 @@ h1 {
     margin: 0;
     font-size: 2rem;
 }
+
+
+.project-card:nth-child(1) {
+    background-color: var(--color-secondary);
+}
+
+.project-card:nth-child(2) {
+    background-color: var(--color-primary);
+}
+
+.project-card:nth-child(3) {
+    background-color: var(--color-accent);
+}
+
+
+@media (max-width: 800px) {
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
