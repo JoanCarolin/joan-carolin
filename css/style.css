@@ -157,9 +157,11 @@ h1 {
 
 .project-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: repeat(6, 1fr);
     gap: 1.5rem;
+    align-items: start;
 }
+
 
 
 /* Project cards */
@@ -182,26 +184,41 @@ h1 {
 }
 
 
-/* Erste Reihe */
 
+
+/* Erste Reihe */
 .project-card:nth-child(1) {
+    grid-column: span 4;
     height: 500px;
-    grid-column: span 2;
 }
 
 .project-card:nth-child(2) {
+    grid-column: span 2;
     height: 350px;
 }
 
 
 /* Zweite Reihe */
-
 .project-card:nth-child(3) {
+    grid-column: span 2;
     height: 350px;
 }
 
 .project-card:nth-child(4) {
+    grid-column: span 4;
     height: 500px;
+}
+
+
+/* Dritte Reihe */
+.project-card:nth-child(5) {
+    grid-column: span 3;
+    height: 450px;
+}
+
+.project-card:nth-child(6) {
+    grid-column: span 3;
+    height: 450px;
 }
 
 
