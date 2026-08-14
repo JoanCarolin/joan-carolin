@@ -287,10 +287,8 @@ h1 {
 .cursor-follower.hover {
     width: 45px;
     height: 45px;
-
     background-color: transparent;
-
-    border-color: var(--color-primary);
+    border-color: var(--color-accent);
 }
 
 
