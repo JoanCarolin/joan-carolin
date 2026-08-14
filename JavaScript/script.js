@@ -25,3 +25,21 @@ function animate() {
 }
 
 animate();
+
+
+
+const links = document.querySelectorAll("a");
+
+links.forEach((link) => {
+
+    link.addEventListener("mouseenter", () => {
+        follower.style.width = "35px";
+        follower.style.height = "35px";
+    });
+
+    link.addEventListener("mouseleave", () => {
+        follower.style.width = "18px";
+        follower.style.height = "18px";
+    });
+
+});
