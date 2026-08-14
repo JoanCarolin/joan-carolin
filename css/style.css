@@ -138,6 +138,12 @@ h1 {
     color: var(--color-primary);
 }
 
+.footer-links {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
 
 
 
