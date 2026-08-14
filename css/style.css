@@ -97,7 +97,7 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    --weight-body: 400;
+    --weight-body: 700;
 
     width: 100%;
     padding: 2rem 3rem;
