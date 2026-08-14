@@ -341,7 +341,7 @@ h1 {
 ANIMATIONS
    ======================================== */
 .frame-animation {
-    position: absolute;
+    display: block;
     right: 2rem;
     bottom: 6rem;
 }
@@ -355,15 +355,15 @@ ANIMATIONS
 
 .bird-animation {
     width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin: 2rem 0;
 }
 
 .bird-animation img {
-    width: 120px;
+    display: block;
+    width: 100%;
     height: auto;
 }
+
 
 
 
