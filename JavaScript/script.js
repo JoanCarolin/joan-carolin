@@ -1,3 +1,4 @@
+//CURSOR
 const follower = document.querySelector(".cursor-follower");
 
 let mouseX = 0;
@@ -58,3 +59,36 @@ function animate() {
 }
 
 animate();
+
+
+
+
+
+//DoggoAnimation
+
+const frames = [
+    "images/Doggo_Run_cycle-1.png",
+    "images/Doggo_Run_cycle-2.png",
+    "images/Doggo_Run_cycle-3.png",
+    "images/Doggo_Run_cycle-4.png",
+    "images/Doggo_Run_cycle-5.png",
+    "images/Doggo_Run_cycle-6.png",
+    "images/Doggo_Run_cycle-7.png",
+    "images/Doggo_Run_cycle-8.png"
+];
+
+const animation = document.querySelector(".frame-animation img");
+
+let currentFrame = 0;
+
+setInterval(() => {
+
+    currentFrame++;
+
+    if (currentFrame >= frames.length) {
+        currentFrame = 0;
+    }
+
+    animation.src = frames[currentFrame];
+
+}, 150);
