@@ -76,8 +76,15 @@ const frames = [
     "images/Doggo_Run_cycle-7.png",
     "images/Doggo_Run_cycle-8.png"
 ];
-
 const animation = document.querySelector(".frame-animation img");
+
+const images = [];
+
+frames.forEach((src) => {
+    const img = new Image();
+    img.src = src;
+    images.push(img);
+});
 
 let currentFrame = 0;
 
@@ -85,10 +92,10 @@ setInterval(() => {
 
     currentFrame++;
 
-    if (currentFrame >= frames.length) {
+    if (currentFrame >= images.length) {
         currentFrame = 0;
     }
 
-    animation.src = frames[currentFrame];
+    animation.src = images[currentFrame].src;
 
 }, 150);
