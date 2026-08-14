@@ -127,3 +127,41 @@ if (birdAnimation) {
 
 }
 
+
+// ========================================
+// DOGGO ANIMATION
+// ========================================
+
+const doggo = document.querySelector(".frame-animation img");
+
+if (doggo) {
+
+    const frames = [
+        "images/Doggo_Run_cycle-1.png",
+        "images/Doggo_Run_cycle-2.png",
+        "images/Doggo_Run_cycle-3.png",
+        "images/Doggo_Run_cycle-4.png",
+        "images/Doggo_Run_cycle-5.png",
+        "images/Doggo_Run_cycle-6.png",
+        "images/Doggo_Run_cycle-7.png",
+        "images/Doggo_Run_cycle-8.png"
+    ];
+
+    const images = frames.map((src) => {
+        const img = new Image();
+        img.src = src;
+        return img;
+    });
+
+    let currentFrame = 0;
+
+    setInterval(() => {
+
+        currentFrame = (currentFrame + 1) % images.length;
+
+        if (images[currentFrame].complete) {
+            doggo.src = images[currentFrame].src;
+        }
+
+    }, 100);
+}
