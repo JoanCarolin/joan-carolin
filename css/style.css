@@ -1,11 +1,11 @@
 :root {
 
     /* Colors */
-    --color-background: #E2FCFF;
+    --color-background: #FADF8F;
     --color-text: #222222;
-    --color-primary: #D98C8C;
-    --color-secondary: #DDE8D5;
-    --color-accent: #F2C6A0;
+    --color-primary: #FEC828;
+    --color-secondary: #22742D;
+    --color-accent: #312956;
     --color-white: #FFFFFF;
 
     /* Typography */
