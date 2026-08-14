@@ -14,23 +14,17 @@ document.addEventListener("mousemove", (event) => {
 });
 
 
-// Hover-Effekt für Projektkacheln
+// Hover über Projektkacheln
 const cards = document.querySelectorAll(".project-card");
 
 cards.forEach((card) => {
 
     card.addEventListener("mouseenter", () => {
-        follower.style.width = "45px";
-        follower.style.height = "45px";
-        follower.style.backgroundColor = "transparent";
-        follower.style.border = "2px solid var(--color-primary)";
+        follower.classList.add("hover");
     });
 
     card.addEventListener("mouseleave", () => {
-        follower.style.width = "18px";
-        follower.style.height = "18px";
-        follower.style.backgroundColor = "var(--color-primary)";
-        follower.style.border = "none";
+        follower.classList.remove("hover");
     });
 
 });
