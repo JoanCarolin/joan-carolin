@@ -344,8 +344,6 @@ h1 {
     position: absolute;
     right: 2rem;
     bottom: 6rem;
-
-    z-index: 10;
 }
 
 .frame-animation img {
