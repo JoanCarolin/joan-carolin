@@ -247,8 +247,9 @@ h1 {
 
 .project-card.project-02 {
     background-image: url("../images/TueftelLab_Digital_Box.svg");
+    background-color: #E0F4F7;
     background-size: cover;
-    background-position: center;
+    background-position: left 130%
 }
 
 
