@@ -253,6 +253,24 @@ h1 {
 }
 
 
+/* ========================================
+   Cursor
+   ======================================== */
+.cursor-follower {
+    position: fixed;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition:
+        width 0.2s ease,
+        height 0.2s ease;
+}
+
+
 
 
 /* ========================================
