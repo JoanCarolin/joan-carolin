@@ -196,11 +196,11 @@ h1 {
 }
 
 
-.project-card:nth-child(1) {
+.project-card:nth-child(3n + 1) {
     background-color: var(--color-secondary);
 }
 
-.project-card:nth-child(2) {
+.project-card:nth-child(3n + 2) {
     background-color: var(--color-primary);
 }
 
