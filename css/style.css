@@ -352,14 +352,16 @@ ANIMATIONS
     height: auto;
 }
 
+
 .bird-animation {
     width: 300px;
-    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .bird-animation img {
-    display: block;
-    width: 100%;
+    width: 120px;
     height: auto;
 }
 
