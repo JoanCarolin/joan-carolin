@@ -91,6 +91,7 @@ h1 {
 
 .site-header {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
@@ -98,17 +99,14 @@ h1 {
     padding: 2rem 3rem;
 }
 
-/* Logo / Bild */
-
 .logo {
     color: var(--color-text);
     text-decoration: none;
 }
 
-/* Navigation */
-
 .main-nav {
     display: flex;
+    flex-direction: row;
     gap: 2rem;
 }
 
