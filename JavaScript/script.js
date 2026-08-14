@@ -69,49 +69,6 @@ if (follower) {
 }
 
 
-// ========================================
-// DOGGO ANIMATION
-// ========================================
-
-const animation = document.querySelector(".frame-animation img");
-
-if (animation) {
-
-    const frames = [
-        "images/Doggo_Run_cycle-1.png",
-        "images/Doggo_Run_cycle-2.png",
-        "images/Doggo_Run_cycle-3.png",
-        "images/Doggo_Run_cycle-4.png",
-        "images/Doggo_Run_cycle-5.png",
-        "images/Doggo_Run_cycle-6.png",
-        "images/Doggo_Run_cycle-7.png",
-        "images/Doggo_Run_cycle-8.png"
-    ];
-
-    const images = [];
-
-    // Alle Frames vorladen
-    frames.forEach((src) => {
-        const img = new Image();
-        img.src = src;
-        images.push(img);
-    });
-
-    let currentFrame = 0;
-
-    setInterval(() => {
-
-        currentFrame++;
-
-        if (currentFrame >= images.length) {
-            currentFrame = 0;
-        }
-
-        animation.src = images[currentFrame].src;
-
-    }, 70);
-
-}
 
 
 
