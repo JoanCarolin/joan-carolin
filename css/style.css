@@ -268,7 +268,7 @@ h1 {
 
 .about-section {
     display: grid;
-    grid-template-columns: 350px 1fr;
+    grid-template-columns: 450px 1fr;
     gap: 1rem;
     padding: 3rem 0;
 }
