@@ -125,7 +125,7 @@ const frames = [
     "frametoframe_bird_17.png",
     "frametoframe_bird_18.png"
 ];
-const animation = document.querySelector(".frame-animation img");
+const animation = document.querySelector(".bird-animation img");
 
 const images = [];
 
@@ -138,13 +138,6 @@ frames.forEach((src) => {
 let currentFrame = 0;
 
 setInterval(() => {
-
-    currentFrame++;
-
-    if (currentFrame >= images.length) {
-        currentFrame = 0;
-    }
-
+    currentFrame = (currentFrame + 1) % images.length;
     animation.src = images[currentFrame].src;
-
 }, 70);
