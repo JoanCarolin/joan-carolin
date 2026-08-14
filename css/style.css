@@ -338,7 +338,7 @@ h1 {
 }
 
 /* ========================================
-   DOGGO ANIMATION
+ANIMATIONS
    ======================================== */
 .frame-animation {
     position: absolute;
@@ -349,6 +349,17 @@ h1 {
 .frame-animation img {
     display: block;
     width: 250px;
+    height: auto;
+}
+
+.bird-animation {
+    width: 200px;
+    margin: 2rem 0;
+}
+
+.bird-animation img {
+    display: block;
+    width: 100%;
     height: auto;
 }
 
