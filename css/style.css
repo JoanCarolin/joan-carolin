@@ -166,14 +166,6 @@ h1 {
     border-radius: var(--radius);
 }
 
-.project-large {
-    min-height: 500px;
-}
-
-.project-small {
-    min-height: 400px;
-}
-
 
 @media (max-width: 800px) {
     .project-grid {
