@@ -9,8 +9,8 @@
     --color-white: #FFFFFF;
 
     /* Typography */
-    --font-heading: "DM Serif Display", serif;
-    --font-body: "Inter", sans-serif;
+    --font-heading: "Merriweather", serif;
+    --font-body: "Raleway", sans-serif;
 
     /* Spacing */
     --space-xs: 0.5rem;
