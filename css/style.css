@@ -250,7 +250,7 @@ h1 {
     background-color: #E0F4F7;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: 160px bottom;
+    background-position: calc(100% + 150px) center;
 }
 
 
