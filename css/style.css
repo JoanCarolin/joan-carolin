@@ -204,7 +204,7 @@ h1 {
     background-color: var(--color-primary);
 }
 
-.project-card:nth-child(3) {
+.project-card:nth-child(3n) {
     background-color: var(--color-accent);
 }
 
