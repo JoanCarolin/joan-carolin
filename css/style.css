@@ -337,6 +337,14 @@ h1 {
     border: 2px solid #5F7ECC;
 }
 
+/* ========================================
+   DOGGO ANIMATION
+   ======================================== */
+.frame-animation img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
 
 
 
