@@ -343,13 +343,14 @@ ANIMATIONS
 
 .frame-animation {
     position: absolute;
-    right: 2rem;
-    bottom: 6rem;
+    right: 0;
+    bottom: 100%;
+    width: 150px;
 }
 
 .frame-animation img {
     display: block;
-    width: 250px;
+    width: 100%;
     height: auto;
 }
 
