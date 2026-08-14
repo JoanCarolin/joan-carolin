@@ -343,10 +343,10 @@ ANIMATIONS
 
 .frame-animation {
     position: absolute;
-    left: 50%;
+    right: 0;
     bottom: 100%;
-    transform: translateX(-50%);
     width: 150px;
+    z-index: 10;
 }
 
 .frame-animation img {
