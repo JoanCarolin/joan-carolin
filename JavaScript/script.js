@@ -6,10 +6,27 @@ let mouseY = 0;
 let followerX = 0;
 let followerY = 0;
 
-document.addEventListener("mousemove", function(event) {
-    mouseX = event.clientX;
-    mouseY = event.clientY;
+
+
+link.addEventListener("mouseenter", () => {
+    follower.style.width = "45px";
+    follower.style.height = "45px";
+
+    follower.style.backgroundColor = "transparent";
+    follower.style.border = "2px solid var(--color-primary)";
 });
+
+link.addEventListener("mouseleave", () => {
+    follower.style.width = "18px";
+    follower.style.height = "18px";
+
+    follower.style.backgroundColor = "var(--color-primary)";
+    follower.style.border = "none";
+});
+
+
+
+
 
 function animate() {
 
