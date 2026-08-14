@@ -10,9 +10,9 @@
 
     /* Typography */
     --font-heading: "Merriweather", serif;
-    --font-heading: font-weight: bold;
     --font-body: "Raleway", sans-serif;
-    --font-body: font-weight: regular;
+    --weight-heading: 700;
+    --weight-body: 400;
 
     /* Spacing */
     --space-xs: 0.5rem;
