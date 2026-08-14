@@ -7,27 +7,38 @@ let followerX = 0;
 let followerY = 0;
 
 
-
-link.addEventListener("mouseenter", () => {
-    follower.style.width = "45px";
-    follower.style.height = "45px";
-
-    follower.style.backgroundColor = "transparent";
-    follower.style.border = "2px solid var(--color-primary)";
-});
-
-link.addEventListener("mouseleave", () => {
-    follower.style.width = "18px";
-    follower.style.height = "18px";
-
-    follower.style.backgroundColor = "var(--color-primary)";
-    follower.style.border = "none";
+// Mausposition verfolgen
+document.addEventListener("mousemove", (event) => {
+    mouseX = event.clientX;
+    mouseY = event.clientY;
 });
 
 
+// Hover über Links
+const links = document.querySelectorAll("a");
+
+links.forEach((link) => {
+
+    link.addEventListener("mouseenter", () => {
+        follower.style.width = "45px";
+        follower.style.height = "45px";
+
+        follower.style.backgroundColor = "transparent";
+        follower.style.border = "2px solid var(--color-primary)";
+    });
+
+    link.addEventListener("mouseleave", () => {
+        follower.style.width = "18px";
+        follower.style.height = "18px";
+
+        follower.style.backgroundColor = "var(--color-primary)";
+        follower.style.border = "none";
+    });
+
+});
 
 
-
+// Cursor-Follower bewegen
 function animate() {
 
     followerX += (mouseX - followerX) * 0.1;
