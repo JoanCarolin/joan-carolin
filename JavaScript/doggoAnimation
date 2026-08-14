@@ -37,5 +37,5 @@ if (doggo) {
 
         doggo.src = doggoImages[currentDoggoFrame].src;
 
-    }, 100);
+    }, 70);
 }
