@@ -268,9 +268,8 @@ h1 {
 
 .about-section {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 150px 1fr;
     gap: 1rem;
-
     padding: 3rem 0;
 }
 
@@ -279,9 +278,6 @@ h1 {
     font-size: 1.2rem;
 }
 
-/*.about-content {
-    max-width: 700px;
-}*/
 
 .about-content {
     margin-top: 0;
