@@ -132,11 +132,15 @@ if (birdAnimation) {
 // DOGGO ANIMATION
 // ========================================
 
+// ========================================
+// DOGGO ANIMATION
+// ========================================
+
 const doggo = document.querySelector(".frame-animation img");
 
 if (doggo) {
 
-    const frames = [
+    const doggoFrames = [
         "images/Doggo_Run_cycle-1.png",
         "images/Doggo_Run_cycle-2.png",
         "images/Doggo_Run_cycle-3.png",
@@ -147,21 +151,17 @@ if (doggo) {
         "images/Doggo_Run_cycle-8.png"
     ];
 
-    const images = frames.map((src) => {
-        const img = new Image();
-        img.src = src;
-        return img;
-    });
-
-    let currentFrame = 0;
+    let currentDoggoFrame = 0;
 
     setInterval(() => {
 
-        currentFrame = (currentFrame + 1) % images.length;
+        currentDoggoFrame++;
 
-        if (images[currentFrame].complete) {
-            doggo.src = images[currentFrame].src;
+        if (currentDoggoFrame >= doggoFrames.length) {
+            currentDoggoFrame = 0;
         }
+
+        doggo.src = doggoFrames[currentDoggoFrame];
 
     }, 100);
 }
