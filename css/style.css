@@ -10,6 +10,7 @@
 
     /* Typography */
     --font-heading: "Merriweather", serif;
+    font-weight: bold;
     --font-body: "Raleway", sans-serif;
 
     /* Spacing */
