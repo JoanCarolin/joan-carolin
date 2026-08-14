@@ -234,7 +234,7 @@ h1 {
 
 
 /* ========================================
-   HOVER
+   HOVER CARDS
    ======================================== */
 
 .project-card:hover {
@@ -256,6 +256,35 @@ h1 {
     background-size: 65%;
     background-repeat: no-repeat;
     background-position: calc(100% + 120px) center;
+}
+
+
+/* ================================
+   ABOUT
+   ================================ */
+
+.about-intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+
+    margin-top: 6rem;
+}
+
+.about-title h2 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.about-text {
+    max-width: 700px;
+}
+
+.about-text p {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
 }
 
 
