@@ -355,6 +355,7 @@ h1 {
     display: block;
     width: 150px !important;
     height: auto !important;
+    right: -2rem;
 }
 
 
