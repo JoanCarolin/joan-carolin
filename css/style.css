@@ -182,12 +182,26 @@ h1 {
 }
 
 
+/* Erste Reihe */
+
 .project-card:nth-child(1) {
-    min-height: 500px;
+    height: 500px;
+    grid-column: span 2;
 }
 
 .project-card:nth-child(2) {
-    min-height: 350px;
+    height: 350px;
+}
+
+
+/* Zweite Reihe */
+
+.project-card:nth-child(3) {
+    height: 350px;
+}
+
+.project-card:nth-child(4) {
+    height: 500px;
 }
 
 
