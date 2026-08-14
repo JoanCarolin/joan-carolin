@@ -340,9 +340,17 @@ h1 {
 /* ========================================
    DOGGO ANIMATION
    ======================================== */
+frame-animation {
+    position: absolute;
+    right: 0;
+    bottom: 2rem;
+    width: 180px;
+    z-index: 10;
+}
+
 .frame-animation img {
     display: block;
-    width: 25%;
+    width: 100%;
     height: auto;
 }
 
