@@ -341,10 +341,6 @@ h1 {
 ANIMATIONS
    ======================================== */
 
-.site-footer {
-    position: relative;
-}
-
 .frame-animation {
     position: absolute;
     right: 0;
