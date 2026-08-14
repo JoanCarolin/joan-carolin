@@ -343,8 +343,9 @@ ANIMATIONS
 
 .frame-animation {
     position: absolute;
-    right: 0;
+    left: 50%;
     bottom: 100%;
+    transform: translateX(-50%);
     width: 150px;
 }
 
