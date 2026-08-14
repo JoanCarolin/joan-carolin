@@ -243,12 +243,15 @@ h1 {
 
 @media (max-width: 700px) {
 
-    .site-header,
-    main,
-    .site-footer {
-        width: min(100% - 2rem, var(--content-width));
+    .project-row {
+        grid-template-columns: 1fr;
     }
 
+    .project-card {
+        height: 300px;
+    }
+
+}
 
     /* Navigation */
 
