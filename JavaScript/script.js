@@ -29,6 +29,21 @@ cards.forEach((card) => {
 
 });
 
+// Hover über Links
+const links = document.querySelectorAll("a");
+
+links.forEach((link) => {
+
+    link.addEventListener("mouseenter", () => {
+        follower.classList.add("hover");
+    });
+
+    link.addEventListener("mouseleave", () => {
+        follower.classList.remove("hover");
+    });
+
+});
+
 
 // Cursor-Follower
 function animate() {
