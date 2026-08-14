@@ -163,5 +163,5 @@ if (doggo) {
 
         doggo.src = doggoFrames[currentDoggoFrame];
 
-    }, 100);
+    }, 70);
 }
