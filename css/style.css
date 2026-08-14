@@ -341,9 +341,8 @@ h1 {
 ANIMATIONS
    ======================================== */
 .frame-animation {
-    display: block;
-    right: 2rem;
-    bottom: 6rem;
+    width: 300px;
+    margin: 2rem 0;
 }
 
 .frame-animation img {
