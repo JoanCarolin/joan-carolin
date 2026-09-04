@@ -9,7 +9,7 @@ const prefix = 'images/Blobbie';
 let isPlaying = false;
 
 function frameSrc(n) {
-  return `${prefix}${String(n).padStart(2, '0')}.png`;
+  return `${prefix}${String(n).padStart(2, '0')}.jpg`;
 }
 
 for (let i = 1; i <= frameCount; i++) {
