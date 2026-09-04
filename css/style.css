@@ -1,0 +1,1241 @@
+:root {
+
+    /* Colors */
+    --color-background: #F2F5FF;
+    --color-text: #222222;
+    --color-primary: #5F7ECC;
+    --color-secondary: #FFE98F;
+    --color-accent: #FA83D5;
+    --color-white: #FFFFFF;
+
+    /* Typography */
+    --font-heading: "Merriweather", serif;
+    --font-body: "Raleway", sans-serif;
+    --weight-heading: 700;
+    --weight-body: 400;
+
+    /* Spacing */
+    --space-xs: 0.5rem;
+    --space-sm: 1rem;
+    --space-md: 2rem;
+    --space-lg: 4rem;
+    --space-xl: 8rem;
+
+    /* Layout */
+    --content-width: 1100px;
+
+    /* Border */
+    --radius: 1px;
+}
+
+
+/* ========================================
+   RESET / BASIS
+   ======================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    
+    background: var(--color-background);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    line-height: 1.6;   
+}
+
+main {
+    flex: 1;
+    padding: 0 5rem;
+
+}
+
+/* ========================================
+   TYPOGRAPHY
+   ======================================== */
+
+h1,
+h2,
+h3 {
+    font-family: var(--font-heading);
+    font-weight: 400;
+}
+
+h1 {
+    font-size: clamp(2rem, 3vw, 3.5rem);
+    line-height: 1.2;
+}
+
+
+a{
+text-decoration: none;
+color: #557FD3;
+    display: inline-block;
+    transition: transform 0.25s ease;
+}
+
+a:hover {
+    transform: translateX(3px);
+}
+
+ul li {
+    margin-bottom: 0.2rem;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+ul li::marker {
+    color: #FA83D5;
+    font-size: 0.8em;
+}
+
+
+
+/* ================================
+   HEADER
+   ================================ */
+
+.site-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.logo {
+    color: var(--color-text);
+    text-decoration: none;
+    padding: 0 2rem;
+}
+
+.main-nav {
+
+    padding: 0 5rem;
+
+}
+
+
+.main-nav a {
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.main-nav a:hover {
+    color: var(--color-primary);
+}
+
+
+
+/* ================================
+   FOOTER
+   ================================ */
+
+.site-footer {
+    background-color: #5F7ECC;
+    padding: 0 5rem;
+    color: #FFFFFF;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+.site-footer a{
+        color: #FFFBE9;
+    }
+
+
+
+/* ================================
+   SECTION BORDERS
+   ================================ */
+.Section_Border_Linie {
+    width: 100vw;
+    height: 40px;
+
+    margin-left: calc(50% - 50vw);
+
+    background-image: url("../images/Section_Border_Linie_Blau06.svg");
+    background-repeat: repeat-x;
+    background-position: left center;
+    background-size: auto 40px;
+}
+
+.Section_Border_Linie_index {
+    width: 100vw;
+    height: 40px;
+
+    margin-left: calc(50% - 50vw);
+
+    background-image: url("../images/Section_Border_Linie_Blau04.svg");
+    background-repeat: repeat-x;
+    background-position: left center;
+    background-size: auto 40px;
+}
+
+
+.Section_Border_Full{
+    width: 100vw;
+    height: 40px;
+
+    margin-left: calc(50% - 50vw);
+
+    background-image: url("../images/Section_Border_Linie_Blau06.svg");
+    background-repeat: repeat-x;
+    background-position: left center;
+    background-size: auto 40px;
+}
+
+.Section_Border_ProjektTop{
+    width: 100vw;
+    height: 40px;
+
+    margin-left: calc(50% - 50vw);
+
+    background-image: url("../images/Section_Border_blau05.svg");
+    background-repeat: repeat-x;
+    background-position: left center;
+    background-size: auto 40px;
+}
+
+
+.footer-divider {
+    width: 100vw;
+    height: 40px;
+
+    margin-left: calc(50% - 50vw);
+
+    background-image: url("../images/Section_Border_blau06.svg");
+    background-repeat: repeat-x;
+    background-position: left center;
+    background-size: auto 40px;
+}
+
+
+
+/* ================================
+   BGs
+   ================================*/
+
+   .Project_Section {
+    background-color: #FFFFFF;
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    padding: 4rem 3rem;
+    }
+
+
+
+   .main_Projekte {
+    background-color: #FFFFFF;
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    padding: 0.1rem 3rem;
+    }
+
+
+ 
+  /*.projectbeschreibung-section{
+    background-color: #F2F5FF;
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    padding: 4rem 3rem;
+
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    gap: 1rem;
+} */
+
+ .ProjektuebersichtGrid {
+    background-color: #FFFFFF;
+
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+
+    padding: 4rem 3rem;
+    } 
+
+/* ========================================
+   Cursor
+   ======================================== */
+.cursor-follower {
+    position: fixed;
+
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+
+    transition:
+        width 0.2s ease,
+        height 0.2s ease,
+        background-color 0.2s ease,
+        border 0.2s ease;
+}
+
+
+.cursor-follower.hover {
+    width: 45px;
+    height: 45px;
+    background-color: transparent;
+    border: 2px solid #5F7ECC;
+}
+
+/* ========================================
+ANIMATIONS
+   ======================================== */
+
+.frame-animation {
+    position: absolute;
+    right: 0;
+    bottom: 100%;
+    width: 250px;
+}
+
+.frame-animation img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+.bird-animation {
+    width: 250px;
+    
+}
+
+.bird-animation img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+/* ========================================
+   PROJECT ROWS
+   ========================================
+
+
+/* Reihe 1: breit + schmal */
+
+.row-one {
+    grid-template-columns: 2fr 1fr;
+}
+
+
+/* Reihe 2: schmal + breit */
+
+.row-two {
+    grid-template-columns: 1fr 2fr;
+}
+
+
+/* Reihe 3: 3/5 + 2/5 */
+
+.row-three {
+    grid-template-columns: 3fr 2fr;
+}
+
+
+/* ========================================
+   Styling karten NEU
+   ======================================== */
+
+/* ========================================
+   KARTEN
+   ======================================== */
+
+.projekuebersicht-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    text-decoration: none;
+    color: var(--color-text);
+
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* ========================================
+   DESKTOP GRID
+   ======================================== */
+
+.ProjektuebersichtGrid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+
+    margin-bottom: -350px;
+    margin-top: -65px;
+}
+
+
+/* ========================================
+   HOVER EFFECT
+   ======================================== */
+
+.projekuebersicht-card {
+    transition: 
+        filter 0.3s ease,
+        transform 0.3s ease;
+}
+
+.projekuebersicht-card:hover {
+
+    transform: scale(1.01);
+}
+
+
+/* Titel */
+.projekuebersicht-card h2 {
+    transition: transform 0.3s ease;
+}
+
+.projekuebersicht-card:hover h2 {
+    transform: translateX(4px);
+}
+/* ========================================
+   PROJEKT 01
+   ======================================== */
+
+.projekt-01 {
+    grid-column: 1 / span 6;
+    aspect-ratio: 1 / 1;
+
+    position: relative;
+    top: 100px;
+    left: 60px;
+
+    background-image: url("../images/Kachel0102.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ========================================
+   PROJEKT 02
+   ======================================== */
+
+.projekt-02{
+    grid-column: 9 / span 4;
+    aspect-ratio: 3 / 4;
+
+    position: relative;
+    left: -80px;
+
+    /*background-image: url("../images/Blobbie01.png");*/
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.frame-anim{
+margin-bottom: 35px;
+
+}
+
+/* ========================================
+   PROJEKT 03
+   ======================================== */
+
+.projekt-03 {
+    grid-column: 9 / span 4;
+    aspect-ratio: 1 / 1;
+
+    position: relative;
+    left: -80px;
+    teop: -50px;
+
+    background-image: url("../images/Kachel03_2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ========================================
+   PROJEKT 04
+   ======================================== */
+
+.projekt-04 {
+    grid-column: 2 / span 5;
+    aspect-ratio: 1 / 1;
+
+    position: relative;
+    top: -350px;
+    left: 60px;
+
+    background-image: url("../images/Kachel04_2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+
+/* ========================================
+   Kachel Text
+   ======================================== */
+.projekt-info {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding-top: 0.5rem;
+}
+
+.projekt-info span {
+    display: block;
+
+    font-size: 0.65rem;
+    line-height: 1.2;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.projekt-info h2 {
+    margin: 0.2rem 0 0;
+
+    font-size: 0.95rem;
+    line-height: 1.1;
+    font-weight: 400;
+
+    transition: transform 0.3s ease;
+}
+
+
+
+.projekt-01 .projekt-info {
+    top: calc(100% - 15px);
+}
+
+.projekt-02 .projekt-info {
+    top: calc(100% - 30px);
+}
+
+.projekt-04 .projekt-info {
+    top: calc(100% - 50px);
+}
+
+
+/* ========================================
+   FRAME
+   ======================================== */
+
+.projekt-frame {
+    position: absolute;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    pointer-events: none;
+}
+
+
+/* ========================================
+   TABLET
+   ======================================== */
+
+@media (max-width: 1000px) {
+
+    .ProjektuebersichtGrid {
+        grid-template-columns: 1fr;
+        gap: 6rem;
+
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .projekuebersicht-card {
+        grid-column: 1;
+        width: 65%;
+        justify-self: center;
+
+        top: 0;
+        left: 0;
+    }
+
+    .projekt-02 {
+        aspect-ratio: 3 / 4;
+    }
+}
+
+
+/* ========================================
+   SMARTPHONE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .projekuebersicht-card {
+        width: 90%;
+    }
+}
+
+
+
+
+/* ================================
+   ABOUT Absatz Startseite
+   ================================*/ 
+
+.about_me-section {
+    display: grid;
+    grid-template-columns: 450px 1fr;
+    gap: 1rem;
+    padding: 3rem 3rem;
+}
+
+
+.about_me-label h2 {
+    margin: 0;
+}
+
+
+.about_me {
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    max-width: 800px;
+}
+
+.about_me p {
+    margin-top: 0;
+}
+
+.about_me-section + hr {
+    border: none;
+    border-top: 1px solid var(--color-text);
+    opacity: 0.2;
+}
+
+
+
+
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+    .about_me-section {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+}
+
+
+/* ================================
+   ABOUT ME Accordeon
+   ================================*/ 
+
+hr,
+.career {
+    border: none;
+    border-top: 1px solid var(--color-text);
+    border-top-color: color-mix(in srgb, var(--color-text) 20%, transparent);
+}
+
+.career details {
+    padding: 1.5rem 0;
+}
+
+.career summary {
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    list-style: none;
+}
+
+.career summary::-webkit-details-marker {
+    display: none;
+}
+
+.career summary::after {
+    content: "+";
+    float: right;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.career details[open] summary::after {
+    content: "−";
+}
+
+.career-content {
+    padding-top: 2rem;
+}
+
+.career-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.career-year {
+    opacity: 0.6;
+}
+
+.career-item h3 {
+    margin: 0 0 0.3rem;
+}
+
+.career-item p {
+    margin: 0;
+}
+
+
+
+
+
+
+/* ========================================
+   PROJEKTBESCHREIBUNG
+   ======================================== */
+
+
+.projectbeschreibung-section {
+    background-color: #ffffff;
+
+    width: 70vw;
+    margin: 4rem auto;
+
+    padding: 4rem 5rem;
+    padding-top: 0px;
+}
+
+
+/* Überschriften links*/
+.about-label h2 {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+}
+
+.headline_projects
+{
+
+
+    width: 70vw;
+    margin: 0rem auto;
+
+    padding: 0rem 5rem;
+}
+
+
+/* Inhalt rechts*/
+.about-content {
+    margin: 0;
+    line-height: 1.7;
+}
+
+.about-content p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+} 
+
+
+
+
+
+
+/* ========================================
+   Projektseite Text Nebeneinander
+   ======================================== */
+.project-materials {
+    display: flex;
+    flex-direction: column;
+}
+
+.material-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 1rem;
+    padding: 1.5rem 0;
+}
+
+.material-item + .material-item {
+    border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+
+.material-title {
+    line-height: 1.4;
+
+}
+
+.material-text {
+    line-height: 1.7;
+}
+
+
+/* ========================================
+   Projektseite Bilder Nebeneinander
+   ======================================== */
+.project-images {
+    grid-column: 1 / -1;
+    display: grid;
+    gap: 1rem;
+}
+
+.project-images-3 {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.project-images-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.project-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+/* ========================================
+   Projektseite 1 Bild
+   ========================================*/
+
+.project-images {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.project-images img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-image-wide {
+    grid-column: 1 / -1;
+    margin-top: 1rem;
+}
+
+.project-image-wide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.project-image-halfwide img {
+    width: 55%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+}
+
+
+/* ========================================
+   Projektseite 1 Bild Klein
+   ========================================*/
+
+
+.project-image-small img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
+
+/* ========================================
+   BILDER
+   ======================================== */
+
+.project-image-grid {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.project-image-small {
+    display: block;
+    width: 350px;
+    height: auto;
+}
+
+
+
+/* =========================================
+   IMAGE COMPARISON / JUXTAPOSITION
+   ========================================= */
+
+.image-compare {
+    --position: 50%;
+
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+
+    overflow: hidden;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+
+    touch-action: none;
+    cursor: ew-resize;
+}
+
+.image-compare img {
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: none;
+}
+
+/* Nachher-Bild */
+
+.image-compare__image--after {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+/* Vorher-Bild */
+
+.image-compare__before {
+    position: absolute;
+    inset: 0 auto 0 0;
+    width: var(--position);
+    overflow: hidden;
+}
+
+.image-compare__before .image-compare__image {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+    object-position: left center;
+}
+
+.image-compare__caption {
+    margin: 0.75rem auto 0;
+    width: 75%;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.7;
+}
+
+
+/* =========================================
+   SLIDER
+   ========================================= */
+
+.image-compare__handle {
+    position: absolute;
+    top: 0;
+    left: var(--position);
+    width: 0;
+    height: 100%;
+
+    transform: translateX(-50%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: ew-resize;
+
+    outline: none;
+}
+
+
+/* Vertikale Linie */
+
+.image-compare__line {
+    position: absolute;
+    top: 0;
+    left: 50%;
+
+    width: 1px;
+    height: 100%;
+
+    background: white;
+
+    transform: translateX(-50%);
+}
+
+
+/* Kreis */
+
+.image-compare__button {
+    position: relative;
+
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid white;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+}
+
+
+/* Hover */
+
+.image-compare:hover .image-compare__button {
+    transform: scale(1.08);
+}
+
+
+/* =========================================
+   PFEILE
+   ========================================= */
+
+.image-compare__arrow {
+    position: absolute;
+
+    width: 7px;
+    height: 7px;
+
+    border-top: 1.5px solid var(--color-text);
+    border-right: 1.5px solid var(--color-text);
+}
+
+
+/* linker Pfeil */
+
+.image-compare__arrow--left {
+    transform: rotate(-135deg);
+    left: 11px;
+}
+
+
+/* rechter Pfeil */
+
+.image-compare__arrow--right {
+    transform: rotate(45deg);
+    right: 11px;
+}
+
+
+/* =========================================
+   FOCUS / KEYBOARD
+   ========================================= */
+
+.image-compare__handle:focus-visible .image-compare__button {
+    outline: 2px solid var(--color-text);
+    outline-offset: 4px;
+}
+
+
+/* =========================================
+   MOBILE
+   ========================================= */
+
+@media (max-width: 700px) {
+
+    .image-compare__button {
+        width: 36px;
+        height: 36px;
+    }
+
+    .image-compare__arrow--left {
+        left: 9px;
+    }
+
+    .image-compare__arrow--right {
+        right: 9px;
+    }
+
+}
+
+
+
+
+
+/* ========================================
+   TABLET / MOBILE
+   ======================================== */
+
+@media (max-width: 1000px) {
+
+    .projectbeschreibung-section {
+        display: block;
+        width: 100vw;
+        margin-left: calc(50% - 50vw);
+        padding: 4rem 3rem;
+    }
+
+    .about-label {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-label:first-child {
+        margin-top: 0;
+    }
+
+    .project-image-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+
+    .project-image-small {
+        width: 100%;
+    }
+}
+
+
+/* ========================================
+   SMARTPHONE
+   ======================================== */
+
+@media (max-width: 600px) {
+
+    .projectbeschreibung-section {
+        padding: 2rem 1rem;
+    }
+
+    .project-image-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-image-small {
+        width: 100%;
+    }
+}
+
+
+
+/* ========================================
+   MOBILE
+   ======================================== */
+
+@media (max-width: 700px) {
+
+    .project-row {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card {
+        height: 300px;
+    }
+
+}
+
+    /* Navigation */
+
+    .main-nav {
+        gap: 1rem;
+    }
+
+
+    /* Projects */
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+
+    .project-card {
+        min-height: 300px;
+    }
+
+}
+
+
+
+
+@media (max-width: 600px) {
+
+    .headline_projects {
+        padding: 0 1rem;
+    }
+
+    .headline_projects h1 {
+        font-size: 2rem;
+        line-height: 1.05;
+    }
+
+    .projectbeschreibung-section {
+        padding: 0 1rem;
+    }
+
+    .about-label {
+        margin-top: 3rem;
+    }
+
+    .about-content {
+        width: 100%;
+    }
+
+    .project-image-small {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+
+        .about-content {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+    .about-label h2 {
+        font-size: 1.3rem;
+        line-height: 1.1;
+    }
+}
