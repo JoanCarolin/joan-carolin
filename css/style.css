@@ -322,6 +322,7 @@ ANIMATIONS
     width: 250px;
 }
 
+
 .frame-animation img {
     display: block;
     width: 100%;
@@ -471,7 +472,11 @@ ANIMATIONS
 
 .frame-anim{
 margin-bottom: 35px;
-
+  width: 300px;   /* feste Breite, passend zu deiner Kachel */
+  height: 200px;  /* feste Höhe */
+  object-fit: contain; /* Bild wird proportional eingepasst, nicht verzerrt */
+  display: block;
+} 
 }
 
 /* ========================================
