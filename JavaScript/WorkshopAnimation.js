@@ -3,11 +3,10 @@ const img = card.querySelector('.frame-anim');
 
 const frameCount = 14;
 const startFrame = 6;
-const fps = 20;
+const baseFps = 24;
 const prefix = 'images/Blobbie';
 
-let interval = null;
-let frame = startFrame;
+let isPlaying = false;
 
 function frameSrc(n) {
   return `${prefix}${String(n).padStart(2, '0')}.jpg`;
@@ -18,30 +17,32 @@ for (let i = 1; i <= frameCount; i++) {
 }
 img.src = frameSrc(startFrame);
 
-function startLoop() {
-  img.style.opacity = 1;
-  frame = startFrame;
+function playAnimation() {
+  isPlaying = true;
+  let frame = startFrame;
+  const baseDelay = 1000 / baseFps;
 
-  interval = setInterval(() => {
+  function nextFrame() {
     frame++;
     if (frame > frameCount) {
-      frame = startFrame;
+      img.src = frameSrc(startFrame);
+      isPlaying = false;
+      return;
     }
     img.src = frameSrc(frame);
-  }, 1000 / fps);
-}
 
-function stopLoop() {
-  clearInterval(interval);
-  interval = null;
-  img.style.opacity = 0; // blendet aus, ABER darunter liegt das Ruhebild sichtbar
+    // letzte 3 Frames verlangsamen sich zunehmend
+    const remaining = frameCount - frame;
+    const slowdown = remaining < 3 ? (3 - remaining) * 0.4 : 0;
+    const delay = baseDelay * (1 + slowdown);
+
+    setTimeout(nextFrame, delay);
+  }
+
+  setTimeout(nextFrame, baseDelay);
 }
 
 card.addEventListener('mouseenter', () => {
-  if (interval) return;
-  startLoop();
-});
-
-card.addEventListener('mouseleave', () => {
-  stopLoop();
+  if (isPlaying) return;
+  playAnimation();
 });
