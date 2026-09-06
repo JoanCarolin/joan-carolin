@@ -3,7 +3,7 @@ const img = card.querySelector('.frame-anim');
 
 const frameCount = 14;
 const startFrame = 6;
-const baseFps = 9;
+const baseFps = 12;
 const prefix = 'images/Blobbie';
 
 let isPlaying = false;
