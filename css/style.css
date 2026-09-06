@@ -471,7 +471,7 @@ ANIMATIONS
 
 .frame-anim{
 margin-bottom: 35px;
-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
 }
 
 /* ========================================
