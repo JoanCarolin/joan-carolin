@@ -1,9 +1,9 @@
 const card = document.querySelector('.projekt-02');
 const img = card.querySelector('.frame-anim');
 
-const frameCount = 15;
+const frameCount = 14;
 const startFrame = 6;
-const fps = 15;
+const fps = 20;
 const prefix = 'images/Blobbie';
 
 let interval = null;
@@ -13,7 +13,6 @@ function frameSrc(n) {
   return `${prefix}${String(n).padStart(2, '0')}.jpg`;
 }
 
-// Preload
 for (let i = 1; i <= frameCount; i++) {
   new Image().src = frameSrc(i);
 }
@@ -26,7 +25,7 @@ function startLoop() {
   interval = setInterval(() => {
     frame++;
     if (frame > frameCount) {
-      frame = startFrame; // Loop: zurück auf Startframe
+      frame = startFrame;
     }
     img.src = frameSrc(frame);
   }, 1000 / fps);
@@ -35,18 +34,11 @@ function startLoop() {
 function stopLoop() {
   clearInterval(interval);
   interval = null;
-  img.style.opacity = 0; // sanftes Ausblenden
-
-  // nach dem Fade den Frame zurücksetzen (unsichtbar, da opacity 0)
-  setTimeout(() => {
-    if (!interval) {
-      img.src = frameSrc(startFrame);
-    }
-  }, 400); // muss zur CSS transition-Dauer passen
+  img.style.opacity = 0; // blendet aus, ABER darunter liegt das Ruhebild sichtbar
 }
 
 card.addEventListener('mouseenter', () => {
-  if (interval) return; // läuft schon
+  if (interval) return;
   startLoop();
 });
 
